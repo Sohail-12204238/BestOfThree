@@ -1,0 +1,19 @@
+class ca1:
+    marks1=None
+    marks2=None
+    marks3=None
+    def data1(self):
+        ca1.marks1=int(input("marks1="))
+class ca2:
+    def data2(self):
+        ca2.marks2=int(input("marks2="))
+class ca3(ca1,ca2):
+    def data3(self):
+        ca3.marks3=30
+        a1=max(ca1.marks1,ca2.marks2)
+        a2=max(ca2.marks2,ca3.marks3)
+        print(a1+a2)
+t1=ca3()
+t1.data1()
+t1.data2()
+t1.data3()
